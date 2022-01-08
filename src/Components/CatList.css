@@ -1,0 +1,208 @@
+nav.catCategories{
+    width: 14%;
+    padding: 20px;
+    height: 100vh;
+    background-color: rgba(0, 139, 139, 0.884);
+    position: relative;
+    position: fixed;
+    right: 0;
+}
+
+.navOpen{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    border: solid 3px aqua;
+    border-radius: 10px;
+    background-color: white;
+    color: blue;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5px;
+    top: 90px;
+}
+
+.navClose{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    top: -25px;
+    left: 20px;
+    transition: .1s;
+}
+
+.navClose:hover{
+    color: rgb(231, 101, 101);
+    cursor: pointer;
+}
+
+nav.catCategories ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    margin-top: 70px;
+    padding-inline-start: 0;
+}
+
+nav.catCategories ul li{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 30px 0 30px 0;
+    list-style: none;
+    transition: .1s;
+    user-select: none;
+}
+
+nav.catCategories ul li:hover{
+    color: greenyellow;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav.catCategories ul li:hover:before{
+    content: "➔ ";
+    color: orange;
+    transition: .1s;
+}
+
+.showCats{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+
+.imagesContainer img{
+    padding: 5px;
+    border-radius: 50px;
+    border: solid 3px white;
+    background-color: darkslateblue;
+}
+
+.showMore{
+    color: white;
+    background-color: black;
+    transition: .1s;
+    padding: 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin: 50px 0 50px 0;
+    user-select: none;
+}
+
+.showMore:hover{
+    color: black;
+    background-color: white;
+}
+
+.helpInfo{
+    padding: 25px;
+    background-color: lime;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1583px) {
+    nav.catCategories{
+        width: 18%;
+    }
+    nav.catCategories ul li{
+        font-size: 23px;
+    }
+    nav.catCategories ul li:hover{
+        font-size: 25px;
+    }
+    .imagesContainer img{
+       width: 400px;
+       height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    nav.catCategories ul li{
+        font-size: 20px;
+    }
+    nav.catCategories ul li:hover{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    nav.catCategories{
+        width: 20%;
+    }
+    nav.catCategories ul li{
+        font-size: 18px;
+    }
+    nav.catCategories ul li:hover{
+        font-size: 20px;
+    }
+    .imagesContainer img{
+       width: 300px;
+       height: 300px;
+    }
+}
+
+@media only screen and (max-width: 952px) {
+    nav.catCategories{
+        width: 25%;
+    }
+    nav.catCategories ul li{
+        font-size: 17px;
+    }
+    nav.catCategories ul li:hover{
+        font-size: 18px;
+    }
+    .helpInfo{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 682px) {
+    nav.catCategories{
+        width: 18%;
+    }
+    nav.catCategories ul li{
+        font-size: 15px;
+    }
+    nav.catCategories ul li:hover{
+        font-size: 16px;
+    }
+    .imagesContainer img{
+       width: 220px;
+       height: 220px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav.catCategories{
+        width: 18%;
+    }
+    nav.catCategories ul li{
+        font-size: 14px;
+    }
+    nav.catCategories ul li:hover{
+        font-size: 14px;
+    }
+    .imagesContainer img{
+       width: 150px;
+       height: 150px;
+    }
+    .showMore{
+        font-size: 18px;
+        padding: 15px;
+    }
+}
